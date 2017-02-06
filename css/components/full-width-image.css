@@ -1,0 +1,36 @@
+.full-width-image {
+  background-position: center;
+  min-height: 30rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  max-width: inherit;
+}
+
+.full-width-image h1,
+.full-width-image h2,
+.full-width-image h3,
+.full-width-image p {
+  z-index: 2;
+  align-content: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.full-width-image.overlay:after {
+  background-color: rgba(0, 0, 0, 0.42);
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}

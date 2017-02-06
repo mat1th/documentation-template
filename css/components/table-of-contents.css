@@ -1,0 +1,89 @@
+.table-of-contents {
+  width: 28rem;
+  padding: 3rem;
+  background: var(--primary-color);
+  z-index: 100;
+  display: block;
+  overflow: scroll;
+}
+
+nav.sticy {
+  height: 100vh;
+  position: fixed;
+  top: 30px;
+  width: 21rem;
+}
+
+
+/*.table-of-contents nav {
+  top: 3rem;
+  position: -webkit-sticky;
+  position: sticky;
+}*/
+
+.table-of-contents ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table-of-contents li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table-of-contents a {
+  text-decoration: none;
+  color: var(--color-light);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: block;
+  font-size: 2.3rem;
+  transition: color 0.3s ease-in;
+}
+
+
+/*.table-of-contents ul.child {
+  height: 0;
+  overflow: hidden;
+}*/
+
+.table-of-contents ul.child a {
+  padding-left: 1rem;
+  padding-top: 0;
+  padding-bottom: 0rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  font-size: 1.8rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.table-of-contents ul.child a:before {
+  background-color: var(--secondaire-color);
+  content: '';
+  transition: transform 0.3s ease-in;
+  position: absolute;
+  will-change: transform;
+  left: 0;
+  width: 1px;
+  bottom: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.table-of-contents ul.child a.active::before,
+.table-of-contents ul.child a:hover::before {
+  transform: scaleX(5);
+}
+
+.table-of-contents .active>a,
+.table-of-contents a:hover {
+  color: var(--color-light-hover);
+}
+
+.table-of-contents li>ul {
+  padding: 0 0 0 0;
+  margin: 0;
+}

@@ -1,0 +1,18 @@
+.sources {
+  margin-top: 3rem;
+  border-top: 1px solid rgba(111, 111, 111, 0.31);
+}
+
+.sources ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sources li {
+  color: var(--color-grey);
+}
+
+.sources span {
+  color: var(--color-grey-light);
+  padding-right: 1.3rem;
+}

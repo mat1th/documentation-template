@@ -1,0 +1,65 @@
+body {
+  min-width: 22.5em;
+  background: var(--color-light);
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 2rem;
+  /*box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
+  max-width: 50em;
+  margin: 4rem auto;
+  position: relative;
+}
+
+section:not(.full-width-image)+section::before {
+  content: '';
+  top: 0;
+  left: -3000px;
+  right: -3000px;
+  position: absolute;
+  height: 1px;
+  z-index: -100;
+  background-color: var(--color-grey-light);
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  width: 85vw;
+}
+
+header {
+  z-index: 100;
+}
+
+ul {
+  padding-left: 2rem;
+  color: var(--color-grey);
+}
+
+.header-title {
+  display: block;
+  color: var(--color-light);
+  padding-bottom: 3rem;
+}
+
+.header-title .title {
+  font-size: 2.8rem;
+  display: block;
+}
+
+.header-title .name a {
+  font-size: 1.8rem;
+  display: inline-block;
+}
+
+.header-title .name a:hover {
+  text-decoration: underline;
+}

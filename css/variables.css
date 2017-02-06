@@ -1,0 +1,20 @@
+@custom-media --narrow-window (min-width: 30em);
+:root {
+
+  /*primary colors*/
+  --primary-color: rgb(40, 44, 55);
+  --secondaire-color: rgb(0, 152, 185);
+  --secondaire-color-hover: rgb(6, 111, 134);
+  /*red*/
+  --color-red: rgb(167, 69, 89);
+  --color-red-light: rgb(166, 101, 114);
+  /*colors*/
+  --color-light: #FFFFFF;
+  --color-light-hover: rgb(154, 230, 249);
+  /*grey*/
+  --color-black: rgb(76, 83, 103);
+  --color-black-transparant: rgba(76, 83, 103, 0.67);
+  --color-grey: rgb(136, 134, 134);
+  --color-grey-light: rgba(177, 173, 173, 0.76);
+  --color-grey-lighter: rgba(111, 111, 111, 0.31);
+}

@@ -1,0 +1,47 @@
+:root {
+    --colwidth: 11.111%;
+}
+
+.col-1-11 {
+    width: calc(var(--colwidth) * 1);
+}
+
+.col-2-11 {
+    width: calc(var(--colwidth) * 2);
+}
+
+.col-3-11 {
+    width: calc(var(--colwidth) * 3);
+}
+
+.col-4-11 {
+    width: calc(var(--colwidth) * 4);
+}
+
+.col-5-11 {
+    width: calc(var(--colwidth) * 5);
+}
+
+.col-6-11 {
+    width: calc(var(--colwidth) * 6);
+}
+
+.col-7-11 {
+    width: calc(var(--colwidth) * 7);
+}
+
+.col-8-11 {
+    width: calc(var(--colwidth) * 8);
+}
+
+.col-9-11 {
+    width: calc(var(--colwidth) * 9);
+}
+
+.col-10-11 {
+    width: calc(var(--colwidth) * 10);
+}
+
+.col-11-11 {
+    width: calc(var(--colwidth) * 11);
+}

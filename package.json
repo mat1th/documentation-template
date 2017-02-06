@@ -1,0 +1,17 @@
+{
+  "name": "stageverslag",
+  "version": "0.8.0",
+  "author": "Selwyn Versteeg",
+  "scripts": {
+    "start": "parallelshell 'npm run browser-sync' 'npm run watch'",
+    "watch": "chokidar 'css/**/*.css' '!css/min.css' -c 'npm run dev:css'",
+    "browser-sync": "browser-sync start --files 'css/**/*.css, *.html' --server",
+    "dev:css": "cssnext css/index.css css/min.css"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.7.11",
+    "chokidar-cli": "^0.2.1",
+    "cssnext": "^1.6.0",
+    "parallelshell": "^1.1.1"
+  }
+}

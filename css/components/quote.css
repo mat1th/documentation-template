@@ -1,0 +1,29 @@
+blockquote {
+  display: block;
+ padding: 0 2rem;
+ margin: 2rem 0;
+  width: 100%;
+  max-width: 30em;
+  text-align: left;
+  border-left: 2px solid var( --color-red-light);
+
+}
+blockquote p {
+ font-size: 2rem;
+ color: var( --color-red-light);
+
+}
+blockquote footer {
+ color: var(--color-grey);
+
+}
+blockquote footer::before{
+ content: '- ';
+}
+blockquote p::before {
+  content: open-quote;
+}
+
+blockquote p::after {
+  content: close-quote;
+}
