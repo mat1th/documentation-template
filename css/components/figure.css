@@ -13,6 +13,6 @@ figure figcaption {
   left: 0;
   right: 0;
   padding: 1rem;
-  background-color: var(   --color-black-transparant);
+  background-color: var( --color-black-transparant);
   color: var(--color-light);
 }

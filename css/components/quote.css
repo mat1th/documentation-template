@@ -1,29 +1,30 @@
 blockquote {
   display: block;
- padding: 0 2rem;
- margin: 2rem 0;
+  padding: 0 2rem;
+  margin: 2rem 0;
   width: 100%;
   max-width: 30em;
   text-align: left;
   border-left: 2px solid var( --color-red-light);
+}
 
+blockquote p:first-of-type {
+  font-size: 2rem;
+  color: var( --color-red-light);
 }
-blockquote p {
- font-size: 2rem;
- color: var( --color-red-light);
 
-}
-blockquote footer {
- color: var(--color-grey);
-
-}
-blockquote footer::before{
- content: '- ';
-}
-blockquote p::before {
+blockquote p:first-of-type::before {
   content: open-quote;
 }
 
-blockquote p::after {
+blockquote p:first-of-type::after {
   content: close-quote;
+}
+
+blockquote p {
+  color: var(--color-grey);
+}
+
+blockquote p::before {
+  content: '- ';
 }
